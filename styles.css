@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e;
-    color: #f4f4f4;
+    background-color: #f1f1f1;
+    color: #333;
     display: flex;
 }
 
@@ -20,7 +20,7 @@ body {
 /* Sidebar Styling */
 .sidebar {
     width: 20%;
-    background-color: #2d2d2d;
+    background-color: #2a2e35;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 .logo {
     font-size: 2em;
     font-weight: bold;
-    color: #ff6a6a;
+    color: #007acc;
     margin-bottom: 30px;
 }
 
@@ -48,13 +48,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ff6a6a;
+    color: #007acc;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff9f9f;
+    color: #005a99;
 }
 
 /* Main Content Area */
@@ -65,7 +65,7 @@ nav ul li a:hover {
 
 h2 {
     font-size: 2.5em;
-    color: #ff6a6a;
+    color: #005a99;
     margin-bottom: 20px;
 }
 
@@ -83,54 +83,59 @@ h2 {
 }
 
 .skill-card {
-    background-color: #2d2d2d;
+    background-color: #dce1e8;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.skill-card p {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover, .skill-card.highlight {
+    background-color: #007acc;
     color: #fff;
+    transform: scale(1.05);
 }
 
-/* Experience Section */
-.experience-section .experience-card {
-    background-color: #2d2d2d;
+/* Experience and Education Section */
+.experience-card, .education-card {
+    background-color: #f1f1f1;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.experience-card h3 {
+.experience-card:hover, .education-card:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.details {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.details.hidden {
+    display: none;
+}
+
+.details h3 {
     font-size: 1.5em;
-    color: #ff6a6a;
-}
-
-.experience-card .date {
-    font-size: 1em;
-    color: #ccc;
+    color: #005a99;
     margin-bottom: 10px;
 }
 
-/* Education Section */
-.education-section .education-card {
-    background-color: #2d2d2d;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+.details ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
-.education-card h3 {
-    font-size: 1.5em;
-    color: #ff6a6a;
-}
-
-.education-card .date {
-    font-size: 1em;
-    color: #ccc;
-    margin-bottom: 10px;
-}

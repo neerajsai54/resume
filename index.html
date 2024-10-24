@@ -28,7 +28,7 @@
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="bio">
-                        <p>Hello, I'm Neeraj Sai Kumar, a Software Engineer passionate about building efficient and scalable applications. I specialize in front-end development, data analytics, and backend optimization. Currently pursuing a Master’s in IT Management, I enjoy leveraging technology to optimize systems and improve decision-making.</p>
+                        <p>Hello, I'm Neeraj Sai Kumar, a Software Engineer with a background in front-end development, big data, and back-end optimization. Currently pursuing a Master’s in IT Management at UT Dallas, I specialize in leveraging technology to improve efficiency and decision-making.</p>
                     </div>
                 </div>
             </section>
@@ -36,56 +36,99 @@
             <section id="skills" class="skills-section">
                 <h2>My Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>Python</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>SQL</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>HTML & CSS</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>Big Data Tools</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>Azure</p>
-                    </div>
-                    <div class="skill-card">
-                        <p>C#</p>
-                    </div>
+                    <div class="skill-card python" onclick="toggleDetails('python')">Python</div>
+                    <div class="skill-card csharp" onclick="toggleDetails('csharp')">C#</div>
+                    <div class="skill-card javascript" onclick="toggleDetails('javascript')">JavaScript</div>
+                    <div class="skill-card sql" onclick="toggleDetails('sql')">SQL</div>
+                    <div class="skill-card html-css" onclick="toggleDetails('html-css')">HTML & CSS</div>
+                    <div class="skill-card bigdata" onclick="toggleDetails('bigdata')">Big Data</div>
+                    <div class="skill-card azure" onclick="toggleDetails('azure')">Azure</div>
+                    <div class="skill-card aws" onclick="toggleDetails('aws')">AWS</div>
                 </div>
             </section>
 
             <section id="experience" class="experience-section">
                 <h2>Experience</h2>
-                <div class="experience-card">
-                    <h3>Application Development Analyst | Accenture, India</h3>
-                    <span class="date">Nov 2019 - Aug 2023</span>
-                    <p>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</p>
-                    <p>Optimized SQL queries, reducing report generation time by 50%.</p>
-                    <p>Implemented forecasting algorithms, enhancing accuracy by 25%.</p>
+                <div class="experience-card accenture" onclick="toggleDetails('accenture')">
+                    <h3>Accenture, India</h3>
+                    <span class="date">November 2019 - August 2023</span>
+                </div>
+                <div id="accenture-details" class="details hidden">
+                    <h3>Role: Application Development Analyst</h3>
+                    <ul>
+                        <li>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</li>
+                        <li>Enhanced MS SQL performance by optimizing complex SQL queries, leading to a 50% reduction in report generation times.</li>
+                        <li>Implemented real-time data synchronization mechanisms, reducing data processing latency from 5 minutes to 30 seconds.</li>
+                        <li>Improved forecast accuracy by 25% with advanced demand forecasting algorithms.</li>
+                    </ul>
                 </div>
             </section>
 
             <section id="education" class="education-section">
                 <h2>Education</h2>
-                <div class="education-card">
+                <div class="education-card utd" onclick="toggleDetails('utd')">
                     <h3>University of Texas at Dallas</h3>
                     <span class="date">Expected May 2025</span>
                     <p>Master of Science, Information Technology and Management</p>
-                    <p>GPA: 3.25 | JSOM Excellence Scholarship</p>
+                    <p>GPA: 3.25 | Awarded JSOM Excellence Scholarship</p>
                 </div>
-                <div class="education-card">
-                    <h3>Vellore Institute of Technology, India</h3>
+                <div id="utd-details" class="details hidden">
+                    <h3>Coursework</h3>
+                    <ul>
+                        <li>R, Object Oriented Programming, AWS Solution Architect</li>
+                        <li>Big Data, Adv. Statistics, SQL, MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="education-card vit" onclick="toggleDetails('vit')">
+                    <h3>Vellore Institute of Technology</h3>
                     <span class="date">July 2019</span>
                     <p>Bachelor of Technology, Electronics and Communication Engineering</p>
+                </div>
+                <div id="vit-details" class="details hidden">
+                    <h3>Relevant Information</h3>
+                    <ul>
+                        <li>Graduated in July 2019</li>
+                        <li>Electronics and Communication Engineering coursework</li>
+                    </ul>
+                </div>
+            </section>
+<!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span class="contact-info">940-843-9964</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-info">neerajsai54@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <span class="contact-info"><a href="https://www.linkedin.com/in/neeraj-sai-kumar/" target="_blank">LinkedIn Profile</a></span>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
+
+    <script>
+        function toggleDetails(sectionId) {
+            const detailSection = document.getElementById(`${sectionId}-details`);
+            const allDetails = document.querySelectorAll('.details');
+            
+            // Hide other details sections
+            allDetails.forEach(detail => {
+                if (detail !== detailSection) {
+                    detail.classList.add('hidden');
+                }
+            });
+
+            // Toggle the clicked section
+            detailSection.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
