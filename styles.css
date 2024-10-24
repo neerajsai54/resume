@@ -1,3 +1,4 @@
+/* Basic Reset and Styling */
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ body {
     margin: 40px auto;
 }
 
+/* Left Section Styling */
 .left-section {
     width: 30%;
     padding: 20px;
@@ -56,6 +58,7 @@ nav ul li a:hover {
     color: #ff9f9f;
 }
 
+/* Right Section Styling */
 .right-section {
     width: 70%;
     padding: 20px;
@@ -71,38 +74,71 @@ h2 {
     margin-bottom: 15px;
 }
 
-.skills-list ul, .experience-item ul {
-    list-style: none;
-    padding-left: 20px;
+/* Logo Container Styling */
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-.skills-list li, .experience-item li {
+.logo-item {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
     margin-bottom: 10px;
 }
 
-.project-item {
-    background-color: #fffbf0;
-    padding: 15px;
-    border: 2px solid #e6d8a3;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: transform 0.3s;
+.logo-item:hover {
+    transform: translateY(-5px);
 }
 
-.project-item:hover {
-    transform: translateY(-3px);
+/* Accenture Logo Style */
+.accenture-logo .accenture-arrow {
+    font-size: 2em;
+    color: purple;
 }
 
-.project-details {
+/* UT Dallas Logo Style */
+.utd-logo .utd-star {
+    font-size: 2em;
+    color: orange;
+}
+
+/* VIT Logo Style */
+.vit-logo .vit-shape {
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+/* Role Details Styling */
+.role-details {
     display: none;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-info.hidden {
+.role-info.hidden {
     display: none;
 }
 
