@@ -6,87 +6,114 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Neeraj Sai Kumar Poluboina</h1>
-            <p class="subtitle">Software Engineer | Data Analyst | Full Stack Developer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am an experienced software engineer with a demonstrated history of building responsive and efficient applications. Currently pursuing a Master’s in Information Technology and Management, I am passionate about data analytics, web development, and improving business processes through innovative solutions.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <ul>
-                    <li><strong>Programming Languages:</strong> C#, Python, JavaScript, R, C++, HTML, CSS</li>
-                    <li><strong>Big Data Tools:</strong> Spark, Pyspark, Hadoop, Hive, Kafka</li>
-                    <li><strong>Databases/Tools:</strong> MS SQL, MySQL, PostgreSQL, MongoDB, Git, TFS</li>
-                    <li><strong>Certifications:</strong> Azure Fundamentals (AZ 900), Accenture Certified C# Programmer</li>
-                </ul>
+    <div class="container">
+        <!-- Left Section -->
+        <section class="left-section">
+            <header>
+                <h1>Neeraj Sai Kumar</h1>
+                <p class="subtitle">Software Engineer | Data Analyst | Full Stack Developer</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="about">
+                <h2>Hello,</h2>
+                <p>I'm Neeraj, a Software Engineer passionate about building efficient and scalable applications. I specialize in front-end development, data analytics, and backend optimization.</p>
+                <p>I’m currently pursuing a Master’s in IT Management and previously worked at Accenture where I led software engineering projects to optimize supply chain systems.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Roadway Fleet Insights</h3>
-                <p>Designed a reporting system leveraging Big Data analytics to improve trucking operations. Enhanced decision-making and increased fleet utilization rates by 30%.</p>
-                <a href="#" class="project-link">View Project</a>
+        <!-- Right Section -->
+        <section class="right-section">
+            <div id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <ul>
+                        <li><strong>Programming Languages:</strong> C#, Python, JavaScript, R, C++, HTML, CSS</li>
+                        <li><strong>Big Data Tools:</strong> Spark, Pyspark, Hadoop, Hive, Kafka</li>
+                        <li><strong>Databases/Tools:</strong> MS SQL, MySQL, PostgreSQL, MongoDB, Git, TFS</li>
+                        <li><strong>Certifications:</strong> Azure Fundamentals (AZ 900), Accenture Certified C# Programmer</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Application Development Analyst | Accenture, India (Nov 2019 - Aug 2023)</h3>
-                <ul>
-                    <li>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</li>
-                    <li>Optimized SQL queries, reducing report generation time by 50%.</li>
-                    <li>Implemented forecasting algorithms, enhancing accuracy by 25%.</li>
-                </ul>
+            <div id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="project-item" onclick="showProjectDetails('project1')">
+                    <h3>Roadway Fleet Insights</h3>
+                    <p>Click to see details</p>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('project2')">
+                    <h3>Inventory Optimization Platform</h3>
+                    <p>Click to see details</p>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('project3')">
+                    <h3>Outlook Mobile Integration</h3>
+                    <p>Click to see details</p>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>The University of Texas at Dallas</h3>
-                <p>Master of Science, Information Technology and Management (Expected May 2025)</p>
-                <p>GPA: 3.25 | JSOM Excellence Scholarship</p>
+            <div id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Application Development Analyst | Accenture, India (Nov 2019 - Aug 2023)</h3>
+                    <ul>
+                        <li>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</li>
+                        <li>Optimized SQL queries, reducing report generation time by 50%.</li>
+                        <li>Implemented forecasting algorithms, enhancing accuracy by 25%.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="education-item">
-                <h3>Vellore Institute of Technology, India</h3>
-                <p>Bachelor of Technology, Electronics and Communication Engineering, July 2019</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Neeraj Sai Kumar Poluboina. All rights reserved.</p>
-        </div>
-    </footer>
+            <div id="education" class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>The University of Texas at Dallas</h3>
+                    <p>Master of Science, Information Technology and Management (Expected May 2025)</p>
+                    <p>GPA: 3.25 | JSOM Excellence Scholarship</p>
+                </div>
+                <div class="education-item">
+                    <h3>Vellore Institute of Technology, India</h3>
+                    <p>Bachelor of Technology, Electronics and Communication Engineering, July 2019</p>
+                </div>
+            </div>
+
+            <!-- Project Details Section (hidden initially) -->
+            <div id="project-details" class="project-details">
+                <h2>Project Details</h2>
+                <div id="project1" class="project-info hidden">
+                    <h3>Roadway Fleet Insights</h3>
+                    <p>Designed a reporting system leveraging Big Data analytics to improve trucking operations. Enhanced decision-making and increased fleet utilization rates by 30%.</p>
+                </div>
+                <div id="project2" class="project-info hidden">
+                    <h3>Inventory Optimization Platform</h3>
+                    <p>Developed an inventory forecasting tool using Python and SQL that reduced excess stock by 25% and improved overall efficiency in inventory management.</p>
+                </div>
+                <div id="project3" class="project-info hidden">
+                    <h3>Outlook Mobile Integration</h3>
+                    <p>Redesigned onboarding flow of Outlook Mobile and enhanced personalization of the app to better serve end users.</p>
+                </div>
+                <button onclick="hideProjectDetails()">Go Back</button>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showProjectDetails(projectId) {
+            document.querySelectorAll('.project-info').forEach(el => el.classList.add('hidden'));
+            document.getElementById(projectId).classList.remove('hidden');
+            document.getElementById('project-details').style.display = 'block';
+        }
+
+        function hideProjectDetails() {
+            document.getElementById('project-details').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
