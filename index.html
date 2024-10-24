@@ -7,82 +7,85 @@
 </head>
 <body>
     <div class="container">
-        <!-- Left Section -->
-        <section class="left-section">
-            <header>
-                <h1>Neeraj Sai Kumar</h1>
-                <p class="subtitle">Software Engineer | Data Analyst | Full Stack Developer</p>
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h1 class="logo">NK</h1>
                 <nav>
                     <ul>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                     </ul>
                 </nav>
-            </header>
-            <div class="about">
-                <h2>Hello,</h2>
-                <p>I'm Neeraj, a Software Engineer passionate about building efficient and scalable applications. I specialize in front-end development, data analytics, and backend optimization.</p>
-                <p>I’m currently pursuing a Master’s in IT Management and previously worked at Accenture where I led software engineering projects to optimize supply chain systems.</p>
             </div>
-        </section>
+        </aside>
 
-        <!-- Right Section -->
-        <section class="right-section">
-            <div id="experience" class="section">
-                <h2>Experience & Education</h2>
-                <div class="logo-container">
-                    <div class="logo-item accenture-logo" onclick="showRoleDetails('accenture')">
-                        <p>Accenture</p>
-                        <div class="accenture-arrow">&rarr;</div>
-                    </div>
-                    <div class="logo-item utd-logo" onclick="showRoleDetails('utd')">
-                        <p>UT Dallas</p>
-                        <div class="utd-star">&#9733;</div>
-                    </div>
-                    <div class="logo-item vit-logo" onclick="showRoleDetails('vit')">
-                        <p>VIT</p>
-                        <div class="vit-shape"></div>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section id="about" class="about-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="bio">
+                        <p>Hello, I'm Neeraj Sai Kumar, a Software Engineer passionate about building efficient and scalable applications. I specialize in front-end development, data analytics, and backend optimization. Currently pursuing a Master’s in IT Management, I enjoy leveraging technology to optimize systems and improve decision-making.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Job Role Details Section (hidden initially) -->
-            <div id="role-details" class="role-details">
-                <div id="accenture" class="role-info hidden">
-                    <h3>Application Development Analyst | Accenture, India (Nov 2019 - Aug 2023)</h3>
-                    <ul>
-                        <li>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</li>
-                        <li>Optimized SQL queries, reducing report generation time by 50%.</li>
-                        <li>Implemented forecasting algorithms, enhancing accuracy by 25%.</li>
-                    </ul>
+            <section id="skills" class="skills-section">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>HTML & CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>Big Data Tools</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>Azure</p>
+                    </div>
+                    <div class="skill-card">
+                        <p>C#</p>
+                    </div>
                 </div>
-                <div id="utd" class="role-info hidden">
+            </section>
+
+            <section id="experience" class="experience-section">
+                <h2>Experience</h2>
+                <div class="experience-card">
+                    <h3>Application Development Analyst | Accenture, India</h3>
+                    <span class="date">Nov 2019 - Aug 2023</span>
+                    <p>Built a responsive front-end using HTML, CSS, and JavaScript, improving user interaction speed by 40%.</p>
+                    <p>Optimized SQL queries, reducing report generation time by 50%.</p>
+                    <p>Implemented forecasting algorithms, enhancing accuracy by 25%.</p>
+                </div>
+            </section>
+
+            <section id="education" class="education-section">
+                <h2>Education</h2>
+                <div class="education-card">
                     <h3>University of Texas at Dallas</h3>
-                    <p>Master of Science, Information Technology and Management (Expected May 2025)</p>
+                    <span class="date">Expected May 2025</span>
+                    <p>Master of Science, Information Technology and Management</p>
                     <p>GPA: 3.25 | JSOM Excellence Scholarship</p>
                 </div>
-                <div id="vit" class="role-info hidden">
+                <div class="education-card">
                     <h3>Vellore Institute of Technology, India</h3>
-                    <p>Bachelor of Technology, Electronics and Communication Engineering, July 2019</p>
+                    <span class="date">July 2019</span>
+                    <p>Bachelor of Technology, Electronics and Communication Engineering</p>
                 </div>
-                <button onclick="hideRoleDetails()">Go Back</button>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
-
-    <script>
-        function showRoleDetails(roleId) {
-            document.querySelectorAll('.role-info').forEach(el => el.classList.add('hidden'));
-            document.getElementById(roleId).classList.remove('hidden');
-            document.getElementById('role-details').style.display = 'block';
-        }
-
-        function hideRoleDetails() {
-            document.getElementById('role-details').style.display = 'none';
-        }
-    </script>
 </body>
 </html>
