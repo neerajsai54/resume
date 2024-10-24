@@ -7,50 +7,49 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    display: flex;
 }
 
 .container {
     display: flex;
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
+    width: 100%;
 }
 
-/* Left Section Styling */
-.left-section {
-    width: 30%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
 }
 
-.left-section header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.sidebar-content {
+    text-align: center;
 }
 
-.left-section .subtitle {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6a6a;
+    margin-bottom: 30px;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px 0;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ff6a6a;
-    font-weight: bold;
+    font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
@@ -58,100 +57,80 @@ nav ul li a:hover {
     color: #ff9f9f;
 }
 
-/* Right Section Styling */
-.right-section {
-    width: 70%;
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 30px;
+/* Main Content Area */
+.main-content {
+    width: 80%;
+    padding: 40px;
 }
 
 h2 {
-    color: #555;
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 2.5em;
+    color: #ff6a6a;
+    margin-bottom: 20px;
 }
 
-/* Logo Container Styling */
-.logo-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+/* About Section */
+.about-section .about-content .bio {
+    max-width: 800px;
+    line-height: 1.6;
 }
 
-.logo-item {
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 15px;
+/* Skills Section */
+.skills-section .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #2d2d2d;
+    padding: 20px;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.logo-item p {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #555;
+.skill-card p {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Experience Section */
+.experience-section .experience-card {
+    background-color: #2d2d2d;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card h3 {
+    font-size: 1.5em;
+    color: #ff6a6a;
+}
+
+.experience-card .date {
+    font-size: 1em;
+    color: #ccc;
     margin-bottom: 10px;
 }
 
-.logo-item:hover {
-    transform: translateY(-5px);
-}
-
-/* Accenture Logo Style */
-.accenture-logo .accenture-arrow {
-    font-size: 2em;
-    color: purple;
-}
-
-/* UT Dallas Logo Style */
-.utd-logo .utd-star {
-    font-size: 2em;
-    color: orange;
-}
-
-/* VIT Logo Style */
-.vit-logo .vit-shape {
-    width: 50px;
-    height: 50px;
-    background-color: #555;
-    border-radius: 50%;
-}
-
-/* Role Details Styling */
-.role-details {
-    display: none;
-    background-color: #fff;
+/* Education Section */
+.education-section .education-card {
+    background-color: #2d2d2d;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.role-info.hidden {
-    display: none;
+.education-card h3 {
+    font-size: 1.5em;
+    color: #ff6a6a;
 }
 
-button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #ff6a6a;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #ff9f9f;
+.education-card .date {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 10px;
 }
